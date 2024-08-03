@@ -1,0 +1,35 @@
+
+.modal{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal button {
+    background-color: rgb(219, 73, 64);
+    font-size: 1.5rem;
+    padding:10px 20px 10px 20px;
+    margin: 10px 0px;
+    border: none ;
+    border-radius: 5px;
+}
+
+.modal button:hover {
+    background-color: rgb(244, 65, 55);
+}
+
+.modal span{
+    font-weight: 600;
+}
+.modal p{
+    font-size: large;
+}

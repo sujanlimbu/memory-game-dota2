@@ -1,0 +1,59 @@
+.gameboard-container {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.hero-card-list {
+    max-height: calc(100vh - 20px);
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+.hero-card {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border: 1px solid #000000;
+}
+
+.hero-card img {
+    padding: 15px 10px;
+    border-radius: 5px;
+    width: 180px;
+    height: auto;
+}
+
+.hero-card p {
+    margin-bottom: 5px;
+    margin-top: 0px;
+    font-size: medium;
+    font-family: monospace;
+}
+
+.hero-card:hover {
+    transition-duration: 100ms;
+    background: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    transform: translateY(5px);
+}
+
+.gameover-screen {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    align-content: center;
+}
