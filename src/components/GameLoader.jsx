@@ -6,7 +6,6 @@ function GameLoader({ setLoading, setData }) {
         const fetchedData = async () => {
             const response = await fetch("https://api.opendota.com/api/heroStats");
             const heroes = await response.json();
-            console.log("APi invoked");
             setData(heroes);
             setLoading(false);
         };

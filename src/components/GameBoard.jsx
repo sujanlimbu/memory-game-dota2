@@ -23,7 +23,7 @@ function GameBoard({ data, setData, setShowWelcomeModal, score, setScore, setLoa
         <>
             <div className="gameboard-container">
                 <div className="hero-card-list">
-                    {shuffleData(data).slice(0, 20).map(hero => (
+                    {shuffleData(data).slice(0, 18).map(hero => (
                         <div className="hero-card" key={hero.id} onClick={() => handleHeroClick(hero.id)} >
                             <img src={`https://cdn.cloudflare.steamstatic.com${hero.img}`} alt={hero.localized_name} />
                             <p>{hero.localized_name}</p>
